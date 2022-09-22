@@ -1,0 +1,51 @@
+libwww-robotrules-perl (6.02-1) unstable; urgency=medium
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ Alessandro Ghedini ]
+  * New upstream release
+  * Bump debhelper compat level to 8
+  * Bump Standards-Version to 3.9.2
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Bump debhelper compatibility level to 10.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 14 Apr 2018 19:07:49 +0200
+
+libwww-robotrules-perl (6.01-1) unstable; urgency=low
+
+  * Initial Release (Closes: #618281).
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 13 Mar 2011 23:20:24 +0000

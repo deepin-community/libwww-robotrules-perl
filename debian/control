@@ -1,0 +1,31 @@
+Source: libwww-robotrules-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: perl,
+                     liburi-perl
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libwww-robotrules-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libwww-robotrules-perl.git
+Homepage: https://metacpan.org/release/WWW-RobotRules
+
+Package: libwww-robotrules-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         liburi-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Description: database of robots.txt-derived permissions
+ WWW::RobotRules parses /robots.txt files as specified in "A Standard for
+ Robot Exclusion", at <http://www.robotstxt.org/wc/norobots.html>. Webmasters
+ can use the /robots.txt file to forbid conforming robots from accessing parts
+ of their web site.
+ .
+ The parsed files are kept in a WWW::RobotRules object, and this object
+ provides methods to check if access to a given URL is prohibited. The same
+ WWW::RobotRules object can be used for one or more parsed /robots.txt files
+ on any number of hosts.
